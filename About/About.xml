@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Ceiling Lights: Vanilla Edition</name>
+	<author>Neceros</author>
+	<supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>neceros.ceilinglightsvanillaedition</packageId>
+  <incompatibleWith>
+    <li>neceros.ceilinglights</li>
+  </incompatibleWith>
+	<description>Adds two hanging ceiling lamps. Out of sight bright light. The ceiling grow lamp outputs ultraviolet light for ultimate plant nutritional needs.
+
+[b]More vanilla in nature:[/b] requires more power and the light ranges are lowered to vanilla values.</description>
+</ModMetaData>
