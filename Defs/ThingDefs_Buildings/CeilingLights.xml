@@ -4,13 +4,12 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Lighting_CeilingLight</defName>
     <label>ceiling light</label>
-    <description>A ceiling light that emits special ultraviolet frequencies, thus enabling optimal plant growth.</description>
+    <description>A ceiling light that emits comfortable, eye-friendly white light.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-      <texPath>CeilingGrowLight</texPath>
+      <texPath>CeilingLight</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
     </graphicData>
     <uiIconPath>CeilingLightIcon</uiIconPath>
     <building>
@@ -53,13 +52,12 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Lighting_CeilingGrowLight</defName>
     <label>ceiling grow light</label>
-    <description>A ceiling light that sheds ultraviolet light to grow plants and warm the skin. Wear sun lotion.</description>
+    <description>A ceiling light that sheds full spectrum light to grow plants and warm the skin. Wear sun lotion.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
       <texPath>CeilingGrowLight</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
     </graphicData>
     <uiIconPath>CeilingGrowIcon</uiIconPath>
     <building>
@@ -79,20 +77,14 @@
     </costList>
     <comps>
       <li Class="CompProperties_Glower">
-        <overlightRadius>7.0</overlightRadius>
+        <overlightRadius>9.5</overlightRadius>
         <glowRadius>14</glowRadius>
         <glowColor>(370,370,370,0)</glowColor>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>2900</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Schedule">
-        <!-- Match plant growing times -->
-        <startTime>0.25</startTime>
-        <endTime>0.8</endTime>
-        <offMessage>Off for plant resting period</offMessage>
+        <basePowerConsumption>1600</basePowerConsumption>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
