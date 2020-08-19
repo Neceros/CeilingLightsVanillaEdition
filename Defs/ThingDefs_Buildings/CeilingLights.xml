@@ -10,6 +10,7 @@
     <graphicData>
       <texPath>CeilingLight</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
     </graphicData>
     <uiIconPath>CeilingLightIcon</uiIconPath>
     <building>
@@ -58,6 +59,7 @@
     <graphicData>
       <texPath>CeilingGrowLight</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
     </graphicData>
     <uiIconPath>CeilingGrowIcon</uiIconPath>
     <building>
@@ -85,6 +87,12 @@
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>1600</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Off for plant resting period</offMessage>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
